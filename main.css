@@ -1,0 +1,85 @@
+
+body {
+   background-size: cover;
+   text-align: center;
+   cursor: crosshair;
+   font-family: 'VT323', monospace;
+ }
+ .balloon {
+  display:grid;
+  position: absolute;
+  bottom: 0;
+ }
+ .balloon2 {
+  display: grid;
+  position:absolute;
+  bottom:3%;
+ }
+.inflatable {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://cdn-icons.flaticon.com/png/512/2831/premium/2831721.png?token=exp=1656416826~hmac=228f7eba18949d521964452171c789c1");
+  background-size: 100px;
+}
+.inflatable2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1404/1404940.png");
+  background-size: 100px;
+}
+.counter {
+  margin-top: 20px;
+  font-size: 45px;
+  color: rgb(53, 64, 192);
+  border: 2px solid rgb(53, 64, 192);
+  padding: 7px 25px;
+  padding-top: 6px;
+  border-radius: 25px;
+  margin: auto;
+  width: 50px;
+  font-weight: bolder;
+  background-color:whitesmoke;
+}
+.score-box {
+  font-size: 40px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.score-box .replay,
+.score-box .label {
+  visibility: hidden;
+}
+
+.score-box.ready {
+  top: 20%;
+}
+
+.score-box.ready .replay,
+.score-box.ready .label {
+  visibility: visible;
+}
+.score-box .replay {
+  border: 1px solid #ffffff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 35px;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgb(169, 51, 51);
+  display: block;
+  margin: 20px;
+}
+.score-box.ready .badge {
+  width: 350px;
+  height: 200px;
+  padding: 15px;
+  margin: 0px auto;
+  border-radius: 15px;
+  border: 4px solid #fff;
+  background-color: rgb(237, 231, 65);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.62);
+  color: #ffffff
+}
